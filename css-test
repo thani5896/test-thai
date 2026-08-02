@@ -1,0 +1,137 @@
+/* พื้นหลังเว็บ */
+body{
+    font-family: Tahoma, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+/* หัวเว็บ */
+header{
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* เมนู */
+nav{
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* ลิงก์เมนู */
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* ชี้เมาส์ */
+nav a:hover{
+    color: yellow;
+}
+
+/* เนื้อหาหลัก */
+main{
+    margin: 20px;
+}
+
+/* กล่องข้อมูล */
+#about,
+#contact{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* หัวข้อ */
+h2{
+    color: green;
+}
+
+h3{
+    color: #333;
+}
+
+/* รูป */
+img{
+    display: block;
+    margin: auto;
+    border: 3px solid green;
+    border-radius: 10px;
+}
+
+/* รายการ */
+ul,
+ol{
+    margin-left: 20px;
+}
+
+/* ตาราง */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table,
+th,
+td{
+    border: 1px solid black;
+}
+
+th{
+    background-color: #4CAF50;
+    color: white;
+}
+
+th,
+td{
+    text-align: center;
+    padding: 10px;
+}
+
+/* ช่องกรอกข้อมูล */
+input,
+textarea{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid gray;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* ปุ่ม */
+input[type=submit]{
+    width: 120px;
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+/* ชี้เมาส์ที่ปุ่ม */
+input[type=submit]:hover{
+    background-color: darkgreen;
+}
+
+/* ลิงก์ Facebook Instagram */
+p a{
+    color: blue;
+    text-decoration: none;
+}
+
+p a:hover{
+    color: red;
+}
+
+/* ส่วนท้าย */
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
