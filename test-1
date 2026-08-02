@@ -2,69 +2,62 @@
 <html lang="th">
 
 <head>
-
-    <!-- กำหนดภาษาและการแสดงผล -->
+    <!-- ตั้งค่าหน้าเว็บ -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- ชื่อหน้าเว็บ -->
-    <title>ประวัติส่วนตัว</title>
-
+    <title>ชื่อเว็บไซต์</title>
 </head>
 
 <body>
 
     <!-- ส่วนหัว -->
     <header>
-        <h1>เว็บไซต์แนะนำตัว</h1>
-        <p>ยินดีต้อนรับ</p>
+        <h1>หัวข้อเว็บไซต์</h1>
+        <p>คำอธิบายเว็บไซต์</p>
     </header>
 
     <!-- เมนู -->
     <nav>
-        <a href="#about">เกี่ยวกับฉัน</a> |
-        <a href="#hobby">งานอดิเรก</a> |
-        <a href="#table">ตารางเรียน</a> |
+        <a href="#about">เกี่ยวกับ</a> |
+        <a href="#service">บริการ</a> |
+        <a href="#table">ตาราง</a> |
         <a href="#contact">ติดต่อ</a>
     </nav>
 
+    <!-- เนื้อหาหลัก -->
     <main>
 
-        <!-- ข้อมูลส่วนตัว -->
+        <!-- ข้อมูล -->
         <section id="about">
 
-            <h2>เกี่ยวกับฉัน</h2>
+            <h2>เกี่ยวกับ</h2>
 
             <!-- รูปภาพ -->
-            <img src="https://via.placeholder.com/200"
-                 alt="รูปโปรไฟล์"
-                 width="200">
+            <img src="image.jpg" alt="รูปภาพ" width="200">
 
-            <!-- ข้อมูล -->
-            <p>ชื่อ : ธนิศร พานิชผล</p>
-            <p>กำลังศึกษาวิศวกรรมซอฟต์แวร์</p>
+            <!-- ข้อความ -->
+            <p>รายละเอียดที่ 1</p>
+            <p>รายละเอียดที่ 2</p>
 
         </section>
 
-        <!-- งานอดิเรก -->
-        <section id="hobby">
+        <!-- รายการ -->
+        <section id="service">
 
-            <h2>งานอดิเรก</h2>
+            <h2>รายการแบบไม่เรียง</h2>
 
-            <!-- รายการแบบไม่เรียง -->
             <ul>
-                <li>เล่นเกม</li>
-                <li>ฟังเพลง</li>
-                <li>เขียนโปรแกรม</li>
-            </ul>
-
-            <h2>วิชาที่ชอบ</h2>
-
-            <!-- รายการแบบเรียง -->
-            <ol>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
+            </ul>
+
+            <h2>รายการแบบเรียง</h2>
+
+            <ol>
+                <li>ข้อที่ 1</li>
+                <li>ข้อที่ 2</li>
+                <li>ข้อที่ 3</li>
             </ol>
 
         </section>
@@ -72,14 +65,13 @@
         <!-- ตาราง -->
         <section id="table">
 
-            <h2>ตารางเรียน</h2>
+            <h2>ตารางข้อมูล</h2>
 
             <table border="1">
 
-                <!-- หัวตาราง -->
                 <tr>
                     <th rowspan="2">วัน</th>
-                    <th colspan="2">เวลาเรียน</th>
+                    <th colspan="2">เวลา</th>
                 </tr>
 
                 <tr>
@@ -87,7 +79,6 @@
                     <th>บ่าย</th>
                 </tr>
 
-                <!-- ข้อมูลในตาราง -->
                 <tr>
                     <td>จันทร์</td>
                     <td>HTML</td>
@@ -97,34 +88,59 @@
                 <tr>
                     <td>อังคาร</td>
                     <td>JavaScript</td>
-                    <td>Database</td>
+                    <td>PHP</td>
                 </tr>
 
             </table>
 
         </section>
 
-        <!-- แบบฟอร์ม -->
+        <!-- ฟอร์ม -->
         <section id="contact">
 
             <h2>ติดต่อ</h2>
 
             <form>
 
-                <!-- ชื่อ -->
                 <label>ชื่อ</label><br>
                 <input type="text"><br><br>
 
-                <!-- อีเมล -->
                 <label>อีเมล</label><br>
                 <input type="email"><br><br>
 
-                <!-- ข้อความ -->
-                <label>ข้อความ</label><br>
-                <textarea rows="4" cols="30"></textarea><br><br>
+                <label>เพศ</label><br>
 
-                <!-- ปุ่มส่ง -->
-                <input type="submit" value="ส่ง">
+                <input type="radio" name="gender"> ชาย
+                <input type="radio" name="gender"> หญิง
+
+                <br><br>
+
+                <label>ความสามารถ</label><br>
+
+                <input type="checkbox"> HTML
+                <input type="checkbox"> CSS
+                <input type="checkbox"> JavaScript
+
+                <br><br>
+
+                <label>จังหวัด</label><br>
+
+                <select>
+                    <option>เชียงใหม่</option>
+                    <option>ลำปาง</option>
+                    <option>เชียงราย</option>
+                </select>
+
+                <br><br>
+
+                <label>ข้อความ</label><br>
+
+                <textarea rows="4" cols="30"></textarea>
+
+                <br><br>
+
+                <input type="submit" value="ส่งข้อมูล">
+                <input type="reset" value="ล้างข้อมูล">
 
             </form>
 
@@ -137,7 +153,7 @@
 
             <a href="https://facebook.com" target="_blank">Facebook</a>
 
-            <br><br>
+            <br>
 
             <a href="https://instagram.com" target="_blank">Instagram</a>
 
@@ -147,7 +163,9 @@
 
     <!-- ส่วนท้าย -->
     <footer>
+
         <p>Copyright © 2026</p>
+
     </footer>
 
 </body>
