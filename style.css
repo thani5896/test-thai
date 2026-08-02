@@ -1,0 +1,129 @@
+/* ----------------------- */
+/* ตกแต่งพื้นหลังทั้งเว็บ */
+/* ----------------------- */
+body{
+    font-family: Tahoma, sans-serif;   /* กำหนดฟอนต์ */
+    background-color: #f2f2f2;         /* สีพื้นหลัง */
+    margin: 0;                         /* ลบระยะขอบของหน้าเว็บ */
+}
+
+/* ----------------------- */
+/* ส่วนหัวของเว็บ */
+/* ----------------------- */
+header{
+    background-color: #4CAF50; /* สีพื้นหลัง */
+    color: white;              /* สีตัวอักษร */
+    text-align: center;        /* จัดข้อความกึ่งกลาง */
+    padding: 20px;             /* ระยะห่างด้านใน */
+}
+
+/* ----------------------- */
+/* เมนูนำทาง */
+/* ----------------------- */
+nav{
+    background-color: #333;
+    display: flex;             /* เรียงเมนูในแนวนอน */
+    justify-content: center;   /* จัดเมนูไว้ตรงกลาง */
+    padding: 10px;
+}
+
+/* ลิงก์ในเมนู */
+nav a{
+    color: white;
+    text-decoration: none;     /* เอาเส้นใต้ลิงก์ออก */
+    margin: 0 15px;            /* ระยะห่างระหว่างเมนู */
+}
+
+/* เมื่อเอาเมาส์ชี้ */
+nav a:hover{
+    color: yellow;
+}
+
+/* ----------------------- */
+/* กล่องข้อมูล */
+/* ----------------------- */
+#about,
+#contact{
+    background-color: white;
+    margin: 20px;              /* ระยะห่างภายนอก */
+    padding: 20px;             /* ระยะห่างภายใน */
+    border: 2px solid gray;    /* เส้นขอบ */
+    border-radius: 10px;       /* มุมโค้ง */
+}
+
+/* ----------------------- */
+/* หัวข้อ */
+/* ----------------------- */
+h2{
+    color: green;
+}
+
+/* ----------------------- */
+/* รูปภาพ */
+/* ----------------------- */
+img{
+    display: block;            /* ให้รูปอยู่คนละบรรทัด */
+    margin: auto;              /* จัดให้อยู่ตรงกลาง */
+    border: 3px solid green;
+    border-radius: 10px;
+}
+
+/* ----------------------- */
+/* ตาราง */
+/* ----------------------- */
+table{
+    width: 100%;               /* กว้างเต็มพื้นที่ */
+    border-collapse: collapse; /* รวมเส้นขอบ */
+}
+
+/* เส้นขอบของตาราง */
+table,
+th,
+td{
+    border: 1px solid black;
+}
+
+/* หัวตาราง */
+th{
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* ช่องข้อมูล */
+th,
+td{
+    padding: 10px;
+    text-align: center;
+}
+
+/* ----------------------- */
+/* ช่องกรอกข้อมูล */
+/* ----------------------- */
+input,
+textarea{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid gray;
+}
+
+/* ปุ่มส่ง */
+input[type=submit]{
+    width: 120px;
+    background-color: green;
+    color: white;
+}
+
+/* เมื่อชี้เมาส์ที่ปุ่ม */
+input[type=submit]:hover{
+    background-color: darkgreen;
+}
+
+/* ----------------------- */
+/* ส่วนท้ายเว็บ */
+/* ----------------------- */
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
